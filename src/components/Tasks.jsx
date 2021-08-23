@@ -75,8 +75,12 @@ const TaskItems = ({ selectedTab, tasks }) => {
       )
       .map((task) => (
         <div className="show-task">
-          <div>{task.text}</div>
-          <div>{dateFnsFormat(new Date(task.date), FORMAT)}</div>
+          <div className="text">
+            <p>{task.text}</p>
+          </div>
+          <div className="date">
+            <p>{dateFnsFormat(new Date(task.date), FORMAT)}</p>
+          </div>
         </div>
       ));
   }
@@ -90,7 +94,7 @@ const TaskItems = ({ selectedTab, tasks }) => {
             <p>{task.text}</p>
           </div>
           <div className="date">
-            {dateFnsFormat(new Date(task.date), FORMAT)}
+            <p>{dateFnsFormat(new Date(task.date), FORMAT)}</p>
           </div>
         </div>
       ));
@@ -98,8 +102,12 @@ const TaskItems = ({ selectedTab, tasks }) => {
 
   return tasks.map((task) => (
     <div className="show-task">
-      <div>{task.text}</div>
-      <div>{dateFnsFormat(new Date(task.date), FORMAT)}</div>
+      <div className="text">
+        <p>{task.text}</p>
+      </div>
+      <div className="date">
+        <p>{dateFnsFormat(new Date(task.date), FORMAT)}</p>
+      </div>
     </div>
   ));
 };
