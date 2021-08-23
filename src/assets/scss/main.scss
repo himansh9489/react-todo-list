@@ -67,6 +67,7 @@ body {
 
   .add-task-btn {
     cursor: pointer;
+    margin-bottom: 10px;
     .plus {
       color: #dd4b39;
       font-size: 18px;
@@ -122,9 +123,8 @@ body {
   .show-task {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
     border-bottom: 1px solid#ca2100;
-    padding-bottom: 5px;
     padding-bottom: 5px;
   }
 }
